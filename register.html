@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Запись на бесплатный урок — Языковой портал</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+        <div class="logo"><h2>Языковой портал</h2></div>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="courses.html">Курсы</a>
+            <a href="register.html">Записаться</a>
+        </nav>
+</header>
+<main>
+    <section class="container" id="form">
+        <h2>Записаться на бесплатный урок</h2>
+        <form action="#">
+            <div class="form-group">
+                <label for="fio">ФИО:</label>
+                <input type="text" id="fio" placeholder="Иванов Иван Иванович" required>
+            </div>
+            <div class="form-group">
+                <label for="tel">Телефон:</label>
+                <input type="tel" id="tel" placeholder="+7(XXX)-XXX-XX-XX" 
+                       pattern="\+7\(\d{3}\)-\d{3}-\d{2}-\d{2}" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="example@mail.ru" required>
+            </div>
+            <div class="form-group">
+                <label for="course">Выбор курса:</label>
+                <select id="course">
+                    <option>Английский для детей</option>
+                    <option>Английский для взрослых</option>
+                    <option>Школьный английский</option>
+                </select>
+            </div>
+            <div class="form-group" style="display: flex; align-items: center; gap: 10px;">
+                <input type="checkbox" id="check" style="width: auto;" required>
+                <label for="check">Согласие на обработку персональных данных</label>
+            </div>
+            <button type="submit" class="btn" style="width: 100%;">Записаться</button>
+        </form>
+    </section>
+</main>
+<footer class="footer">
+  <p>&copy; 2024 Языковой портал. Все права защищены.</p>
+</footer>
+</body>
+</html>
